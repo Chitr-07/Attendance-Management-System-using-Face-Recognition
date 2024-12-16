@@ -63,7 +63,7 @@ def manually_fill():
         try:
             global cursor
             connection = pymysql.connect(
-                host='localhost', user='root', password='Chintu@123', db='manually_fill_attendance')
+                host='localhost', user='root', password='', db='manually_fill_attendance')
             cursor = connection.cursor()
         except Exception as e:
             print(e)
@@ -448,7 +448,7 @@ def subjectchoose():
                 try:
                     global cursor
                     connection = pymysql.connect(
-                        host='localhost', user='root', password='Chintu@123', db='Face_reco_fill')
+                        host='localhost', user='root', password='', db='Face_reco_fill')
                     cursor = connection.cursor()
                 except Exception as e:
                     print(e)
